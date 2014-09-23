@@ -44,6 +44,9 @@ Sep 23, 2014
 | Vim          | 7.4.52   |      |
 | Zsh          | 5.0.2    |      |
 
+## Box
+[fainder/ubuntu-agilerails](https://vagrantcloud.com/fainder/boxes/ubuntu-agilerails)
+
 ## TODO
 
 - Supporting to Virtual Box and VMWare
