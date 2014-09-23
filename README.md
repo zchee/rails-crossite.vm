@@ -17,8 +17,10 @@ A Starter Kit for Ruby on Rails Development
 # Requirements
 
 - Vagrant
+
 - Parallels Desktop
  - TODO: Supporting to Virtual Box and VMWare
+
 - Vagrant Plugins
   - vagrant-omnibus
   - vagrant-librarian-chef
