@@ -20,7 +20,6 @@ A Starter Kit for Ruby on Rails Development
 - Vagrant
 
 - Parallels Desktop
- - TODO: Supporting to Virtual Box and VMWare
 
 - Vagrant Plugins
   - vagrant-omnibus
@@ -31,7 +30,7 @@ A Starter Kit for Ruby on Rails Development
 ## Usage
 
 ## Environment
-
+Sep 23, 2014
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
 | Ubuntu       | 14.04    |      |
@@ -44,3 +43,13 @@ A Starter Kit for Ruby on Rails Development
 | Redis Server | 2.8.15   |      |
 | Vim          | 7.4.52   |      |
 | Zsh          | 5.0.2    |      |
+
+## TODO
+
+- Supporting to Virtual Box and VMWare
+
+## Change log
+
+### 0.0.1
+Sep 23, 2014  
+Initial commit
