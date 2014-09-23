@@ -12,7 +12,7 @@ A Starter Kit for Ruby on Rails Development
 2. Fix Vagrantfile
 
 3. Vagrant up
-    vagrant up
+        vagrant up
 
 # Requirements
 
