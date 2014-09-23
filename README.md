@@ -6,6 +6,7 @@ Starter kit for developing Ruby on Rails
 # Environment
 ## Vagrant
 ### Plugins
+<span class="mega-octicon octicon-check"></span>Required
 - vagrant-omnibus
 - vagrant-librarian-chef
 
