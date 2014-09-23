@@ -10,6 +10,7 @@ Starter kit for developing Ruby on Rails
 - vagrant-omnibus
 - vagrant-librarian-chef
 - vagrant-parallels
+
 #### Option
 - vagrant-cachier
 
