@@ -7,7 +7,7 @@ A Starter Kit for Ruby on Rails Development
 
 1. Clone the repository to any work folder
 
-    git clone https://github.com/fainder/vagrant-rails-starterkit.git
+        git clone https://github.com/fainder/vagrant-rails-starterkit.git
 
 2. Fix Vagrantfile
 
