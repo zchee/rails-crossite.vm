@@ -38,8 +38,8 @@ Sep 23, 2014
 | rbenv        | 0.4.0    |      |
 | ruby_build   | 20140919 |      |
 | Nodejs       | v0.10.32 |      |
-| PostgreSQL   | 9.3.5    | Default User and Password is postgres@postgres |
-| MySQL        | 14.14    | Default User is vagrant. Password is null |
+| PostgreSQL   | 9.3.5    | Default User and Password is `postgres@postgres` |
+| MySQL        | 14.14    | Default User is `vagrant`. Password is null |
 | Redis Server | 2.8.15   |      |
 | Vim          | 7.4.52   |      |
 | Zsh          | 5.0.2    |      |
