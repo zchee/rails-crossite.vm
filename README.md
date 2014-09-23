@@ -1,7 +1,8 @@
 Vagrant-Rails-StarterKit
 ========================
 
-A Starter Kit for Ruby on Rails Development
+A Starter Kit for Ruby on Rails Development  
+Inspired by the [Using Vagrant for Rails Development](https://gorails.com/guides/using-vagrant-for-rails-development)
 
 ## Installation
 
@@ -22,12 +23,10 @@ A Starter Kit for Ruby on Rails Development
 - Parallels Desktop
 
 - Vagrant Plugins
-  - vagrant-omnibus
-  - vagrant-librarian-chef
-  - vagrant-parallels
   - vagrant-cachier 
-
-## Usage
+  - vagrant-librarian-chef
+  - vagrant-omnibus
+  - vagrant-parallels
 
 ## Environment
 Sep 23, 2014
