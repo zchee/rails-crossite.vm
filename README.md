@@ -1,9 +1,33 @@
 Vagrant-Rails-StarterKit
 ========================
 
-Starter kit for developing Ruby on Rails
+A Starter Kit for Ruby on Rails Development
 
-# Evvironment
+# Installation
+
+1. Clone the repository to any work folder
+
+    git clone https://github.com/fainder/vagrant-rails-starterkit.git
+
+2. Fix Vagrantfile
+
+3. Vagrant up
+    vagrant up
+
+# Requirements
+
+- Vagrant
+- Parallels Desktop
+ - TODO: Supporting to Virtual Box and VMWare
+- Vagrant Plugins
+  - vagrant-omnibus
+  - vagrant-librarian-chef
+  - vagrant-parallels
+  - vagrant-cachier 
+
+# Usage
+
+## Environment
 
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
@@ -17,18 +41,3 @@ Starter kit for developing Ruby on Rails
 | Redis Server | 2.8.15   |      |
 | Vim          | 7.4.52   |      |
 | Zsh          | 5.0.2    |      |
-
-# Vagrant Environment
-
-## Plugins
-
-### Required
-- vagrant-omnibus
-- vagrant-librarian-chef
-- vagrant-parallels
-
-### Option
-- vagrant-cachier
-
-## Provider
- - Parallels
