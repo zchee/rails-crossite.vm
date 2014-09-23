@@ -3,7 +3,7 @@ Vagrant-Rails-StarterKit
 
 A Starter Kit for Ruby on Rails Development
 
-# Installation
+## Installation
 
 1. Clone the repository to any work folder
 
@@ -12,9 +12,10 @@ A Starter Kit for Ruby on Rails Development
 2. Fix Vagrantfile
 
 3. Vagrant up
+
         vagrant up
 
-# Requirements
+## Requirements
 
 - Vagrant
 
@@ -27,7 +28,7 @@ A Starter Kit for Ruby on Rails Development
   - vagrant-parallels
   - vagrant-cachier 
 
-# Usage
+## Usage
 
 ## Environment
 
