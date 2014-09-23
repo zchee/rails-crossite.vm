@@ -17,6 +17,7 @@ Starter kit for developing Ruby on Rails
 | Redis Server | 2.8.15   |      |
 | Vim          | 7.4.52   |      |
 | Zsh          | 5.0.2    |      |
+| ------------ | -------- | ---- |
 
 # Vagrant Environment
 
