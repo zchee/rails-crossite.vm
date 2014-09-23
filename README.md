@@ -62,8 +62,8 @@ Sep 23, 2014
 
 ## Change log
 
-### 0.0.2 - Sep 23, 2014
+### 0.2.0 - Sep 23, 2014
 Add oh-my-zsh and prezto
 
-### 0.0.1 - Sep 23, 2014  
+### 0.1.0 - Sep 23, 2014  
 Initial commit
