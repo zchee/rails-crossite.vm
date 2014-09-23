@@ -27,27 +27,43 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ps.cpus = 2
   end
 
+  # if Vagrant.has_plugin?("vagrant-cachier")
+  #   config.cache.scope = :box
+  #   config.cache.synced_folder_opts = {
+  #     type: :nfs,
+  #   }
+  # end
+  # config.cache.enable :chef
+
   # Use Chef Solo to provision our virtual machine
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
     chef.add_recipe "apt"
+    chef.add_recipe "mysql::client"
+    chef.add_recipe "mysql::server"
     chef.add_recipe "nodejs"
     chef.add_recipe "postgresql"
     chef.add_recipe "postgresql::server"
+    chef.add_recipe "rbenv::user"
+    chef.add_recipe "rbenv::vagrant"
     chef.add_recipe "redis"
     chef.add_recipe "redis::server"
     chef.add_recipe "ruby_build"
-    chef.add_recipe "rbenv::user"
-    chef.add_recipe "rbenv::vagrant"
     chef.add_recipe "vim"
     chef.add_recipe "zsh"
-    chef.add_recipe "mysql::server"
-    chef.add_recipe "mysql::client"
+
+    chef.add_recipe "prezto"
 
     # Install Ruby 2.1.3 and Bundler
     # Set an empty root password for MySQL to make things simple
     chef.json = {
+      mysql: {
+        server_root_password: ''
+      },
+      postgresql: {
+        password: 'postgres'
+      },
       rbenv: {
         user_installs: [{
           user: 'vagrant',
@@ -67,12 +83,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             }
           ]
         }]
-      },
-      mysql: {
-        server_root_password: ''
-      },
-      postgresql: {
-        password: 'postgres'
       }
     }
   end

@@ -1,4 +1,5 @@
 *.lock
 .vagrant
+app/**/*
 cookbooks
 tmp
