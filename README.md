@@ -47,6 +47,7 @@ Sep 23, 2014
 | Zsh          | 5.0.2    |      |
 
 ## Option
+
 | oh-my-zsh    |          | Default theme `robbyrussell` |
 | prezto       |          | Default theme `sorin` |
 
