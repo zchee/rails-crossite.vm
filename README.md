@@ -31,6 +31,7 @@ A Starter Kit for Ruby on Rails Development
 
 ## Environment
 Sep 23, 2014
+
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
 | Ubuntu       | 14.04    |      |
