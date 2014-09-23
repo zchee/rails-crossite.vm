@@ -51,6 +51,5 @@ Sep 23, 2014
 
 ## Change log
 
-### 0.0.1
-Sep 23, 2014  
+### 0.0.1 - Sep 23, 2014  
 Initial commit
