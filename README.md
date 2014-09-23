@@ -6,8 +6,12 @@ Starter kit for developing Ruby on Rails
 # Environment
 ## Vagrant
 ### Plugins
+#### Required
 - vagrant-omnibus
 - vagrant-librarian-chef
+- vagrant-parallels
+#### Option
+- vagrant-cachier
 
 ### Provider
  - Parallels
