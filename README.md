@@ -48,6 +48,8 @@ Sep 23, 2014
 
 ## Option
 
+| Application  | Version  | Misc |
+| ------------ | -------- | ---- |
 | oh-my-zsh    |          | Default theme `robbyrussell` |
 | prezto       |          | Default theme `sorin` |
 
