@@ -54,7 +54,7 @@ Sep 23, 2014
 | prezto       |          | Default theme `sorin` |
 
 ## Box
-[fainder/ubuntu-agilerails](https://vagrantcloud.com/fainder/boxes/ubuntu-agilerails)
+[fainder/rails-starter](https://vagrantcloud.com/fainder/boxes/rails-starter)
 
 ## TODO
 
