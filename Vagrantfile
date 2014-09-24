@@ -22,35 +22,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Optional
     # override.vm.box = "fainder/rails-starter"
     override.vm.box = "parallels/ubuntu-14.04"
-    # ps.optimize_power_consumption = false
+    ps.optimize_power_consumption = false
     ps.check_guest_tools = false
-    # ps.memory = 1024
-    # ps.cpus = 2
+    ps.memory = 1024
+    ps.cpus = 2
   end
-
-  if Vagrant.has_plugin?("vagrant-cachier")
-    config.cache.scope = :box
-    config.cache.synced_folder_opts = {
-      type: :nfs,
-    }
-  end
-
-  config.omnibus.chef_version = :latest
-  config.omnibus.cache_packages = false
-
-  config.cache.enable :apt
-  config.cache.enable :chef
-  config.cache.enable :gem
 
   # Use Chef Solo to provision our virtual machine
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
     chef.add_recipe "apt"
-    chef.add_recipe "nodejs"
     chef.add_recipe "ruby_build"
     chef.add_recipe "rbenv::user"
     chef.add_recipe "rbenv::vagrant"
+    chef.add_recipe "nodejs"
     chef.add_recipe "vim"
     chef.add_recipe "zsh"
     chef.add_recipe "mysql::client"
@@ -74,12 +60,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv: {
         user_installs: [{
           user: 'vagrant',
-          rubies: [ '2.1.3', '2.0.0-p353' ],
+          rubies: [ '2.1.3' ],
           global: '2.0.0-p353',
           gems: {
-            '2.0.0-p353' => [
-              { name: 'bundler' }
-            ],
             '2.1.3' => [
               { name: 'bundler' }
             ]
