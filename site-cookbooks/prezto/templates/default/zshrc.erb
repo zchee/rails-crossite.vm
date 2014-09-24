@@ -12,4 +12,7 @@ fi
 
 # Customize to your needs...
 
+# ruby_build patch
+alias 'rbenv install'='curl -fsSL https://gist.github.com/mislav/a18b9d7f0dc5b9efc162.txt | rbenv install --patch'
+
 function chpwd() { ls -AF }
