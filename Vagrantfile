@@ -1,10 +1,6 @@
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  # Use Ubuntu 14.04 Trusty Tahr 64-bit as our operating system
   config.vm.box = "ubuntu/trusty64"
 
   # Forward the Rails server default port to the host
@@ -13,22 +9,26 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :private_network, ip: "192.168.77.7"
   config.vm.synced_folder "app/", "/app", type: "nfs"
 
-  # Configurate the virtual machine to use 2GB of RAM
   config.vm.provider :virtualbox do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "1024"]
+    vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2", "--ioapic", "on"]
   end
 
-  config.vm.provider 'parallels' do |ps, override|
-    # Optional
-    # override.vm.box = "fainder/rails-starter"
+  config.vm.provider :vmware_fusion do |vm, override|
+    override.vm.box    = "hashicorp/precise64"
+    vm.vmx["memsize"]  = "1024"
+    vm.vmx["numvcpus"] = "2"
+  end
+
+  config.vm.provider :parallels do |ps, override|
     override.vm.box = "parallels/ubuntu-14.04"
-    ps.optimize_power_consumption = false
+    # ps.optimize_power_consumption = false
     ps.check_guest_tools = false
     ps.memory = 1024
     ps.cpus = 2
   end
 
-  # Use Chef Solo to provision our virtual machine
+  config.omnibus.chef_version = :latest
+
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
@@ -48,8 +48,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.add_recipe "prezto"
 
-    # Install Ruby 2.1.3 and Bundler
-    # Set an empty root password for MySQL to make things simple
     chef.json = {
       mysql: {
         server_root_password: ''
@@ -76,6 +74,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             }
           ]
         }]
+      },
+      prezto: {
+        user: "vagarnt",
+        group: "vagrant"
       }
     }
   end
