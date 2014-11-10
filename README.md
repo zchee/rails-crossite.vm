@@ -1,14 +1,14 @@
 Vagrant-Rails-StarterKit
 ========================
 
-A Starter Kit for Ruby on Rails Development  
+A Starter Kit for Ruby on Rails Development
 Inspired by the [Using Vagrant for Rails Development](https://gorails.com/guides/using-vagrant-for-rails-development)
 
 ## Installation
 
 1. Clone the repository to any work folder
 
-        git clone https://github.com/fainder/vagrant-rails-starterkit.git
+        git clone https://github.com/zchee/vagrant-rails-starterkit.git
 
 2. Fix Vagrantfile
 
@@ -23,7 +23,7 @@ Inspired by the [Using Vagrant for Rails Development](https://gorails.com/guides
 - Parallels Desktop
 
 - Vagrant Plugins
-  - vagrant-cachier 
+  - vagrant-cachier
   - vagrant-librarian-chef
   - vagrant-omnibus
   - vagrant-parallels
@@ -65,5 +65,5 @@ Sep 23, 2014
 ### 0.2.0 - Sep 23, 2014
 Add oh-my-zsh and prezto
 
-### 0.1.0 - Sep 23, 2014  
+### 0.1.0 - Sep 23, 2014
 Initial commit
