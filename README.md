@@ -29,7 +29,7 @@ Inspired by the [Using Vagrant for Rails Development](https://gorails.com/guides
   - vagrant-parallels
 
 ## Environment
-Sep 23, 2014
+Nov 10, 2014
 
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
@@ -44,23 +44,25 @@ Sep 23, 2014
 | MySQL        | 14.14    | Default User is `vagrant`. Password is null |
 | Redis Server | 2.8.15   |      |
 | Vim          | 7.4.52   |      |
-| Zsh          | 5.0.2    |      |
+| Zsh          | 5.0.7    |      |
 
 ## Option
 
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
-| oh-my-zsh    |          | Default theme `robbyrussell` |
 | prezto       |          | Default theme `sorin` |
 
 ## Box
-[fainder/rails-starter](https://vagrantcloud.com/fainder/boxes/rails-starter)
+[zchee/rails-starter](https://vagrantcloud.com/fainder/boxes/rails-starter)
 
 ## TODO
 
 - Supporting to Virtual Box and VMWare
 
 ## Change log
+
+### 1.0.0 - Nov 10, 2014
+Release Mejor version
 
 ### 0.2.0 - Sep 23, 2014
 Add oh-my-zsh and prezto
