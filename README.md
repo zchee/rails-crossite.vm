@@ -7,8 +7,8 @@ Inspired by the [Using Vagrant for Rails Development](https://gorails.com/guides
 ## What's "Crossite" ?
 Crossite is something to be laid under the train rails.
 
-## Setup Environment
-Dec 31, 2014
+## Server environment to be set up
+last update Dec 31, 2014
 
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
@@ -17,24 +17,17 @@ Dec 31, 2014
 | rbenv        | 0.4.0    |      |
 | ruby_build   | 20140919 |      |
 | rbenv-rehash |          |      |
-| Nodejs       | v0.10.32 |      |
+| Nodejs       | v0.10.33 |      |
 | PostgreSQL   | 9.3.5    | Default User and Password is `postgres@postgres` |
 | MySQL        | 14.14    | Default User is `root`. Password is null |
 | Redis Server | 2.8.15   |      |
 | Vim          | 7.4.52   |      |
 | Zsh          | 5.0.7    |      |
 
-## Installation
-
-1. Clone the repository to any work folder
-
-        git clone https://github.com/zchee/crossite.vm.git
-
-2. Fix Vagrantfile
-
-3. Vagrant up
-
-        vagrant up
+## Option
+| Application  | Version  | Misc |
+| ------------ | -------- | ---- |
+| prezto       |          | Default theme `sorin` |
 
 ## Requirements
 - Vagrant
@@ -50,16 +43,23 @@ Dec 31, 2014
   - (vagrant-vmware-fusions)
   - (vagrant-parallels)
 
-## Option
-| Application  | Version  | Misc |
-| ------------ | -------- | ---- |
-| prezto       |          | Default theme `sorin` |
+## Installation
+
+1. Clone the repository to any work folder
+
+        git clone https://github.com/zchee/crossite.vm.git
+
+2. Fix Vagrantfile
+
+3. Vagrant up
+
+        vagrant up
 
 ## Box
 [zchee/crossite.vm](https://atlas.hashicorp.com/zchee/boxes/rails-crossite.vm)
 
 ## TODO
-<!-- - Supporting to Virtual Box and VMWare -->
+- Error gem install on `rbenv` recipes.
 
 ## Change log
 ### 1.0.0 - Dev 31, 2014

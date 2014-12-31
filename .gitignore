@@ -1,5 +1,6 @@
-*.lock
+*.box
 .vagrant
 app/**/*
 cookbooks
 tmp
+site-cookbooks/crossite
