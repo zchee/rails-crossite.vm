@@ -13,16 +13,15 @@ last update Dec 31, 2014
 | Application  | Version  | Misc |
 | ------------ | -------- | ---- |
 | Ubuntu       | 14.04    | Based box is [box-cutter/ubuntu1404](https://atlas.hashicorp.com/box-cutter/boxes/ubuntu1404) |
-| Ruby         | 2.2.0    |      |
-| rbenv        | 0.4.0    |      |
-| ruby_build   | 20140919 |      |
-| rbenv-rehash |          |      |
-| Nodejs       | v0.10.33 |      |
-| PostgreSQL   | 9.3.5    | Default User and Password is `postgres@postgres` |
-| MySQL        | 14.14    | Default User is `root`. Password is null |
-| Redis Server | 2.8.15   |      |
-| Vim          | 7.4.52   |      |
-| Zsh          | 5.0.7    |      |
+| Ruby         | 2.2.0                   |      |
+| rbenv        | 0.4.0                   |      |
+| ruby_build   | 20141225                |      |
+| Nodejs       | v0.10.33                |      |
+| PostgreSQL   | 9.3.5                   | Default User and Password is `postgres@postgres` |
+| MySQL        | 14.14 Distrib 5.5.40    | Default User is `root`. Password is `mysql` |
+| Redis Server | 2.8.4                   |      |
+| Vim          | 7.4.52                  |      |
+| Zsh          | 5.0.7                   |      |
 
 ## Option
 | Application  | Version  | Misc |
